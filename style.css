@@ -1,23 +1,19 @@
 .container {
-  width: 80vw;
-  height: 80vh;
+  width: 80vmin;
+  height: 80vmin;
   border: 1px solid;
   display: grid;
   grid-template-columns: repeat(16, 20px);
-  grid-auto-rows: minmax(10px, auto);
+  grid-auto-rows: repeat(16, 20px);
   justify-content: center;
 }
 
 .square {
-  /* width: 50px;
-  height: 50px; */
-  /* background-color: red; */
-  /* border: 1px solid; */
-  background-color: white;
   transition: background-color 15s ease-out;
+  overflow: hidden;
 }
 
 .square:hover {
   background-color: black;
-  transition: background-color 250ms ease-out;
+  transition: background-color 50ms ease-out;
 }
